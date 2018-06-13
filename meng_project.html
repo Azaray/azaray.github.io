@@ -11,7 +11,6 @@
     <title>Group MEng Project</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
 
-
     <style type="text/css">
 
         * {
@@ -59,9 +58,9 @@
         }
         .content h1 {
             text-align: center;
-            text-transform: uppercase;
-            padding-top: 15%;
+            padding-top: 25%;
             z-index: 1000;
+            color: white;
         }
         .content p {
             letter-spacing: 3px;
@@ -69,6 +68,7 @@
             text-justify: inter-word;
             z-index: 1000;
             opacity: 0;
+            color: white;
 
             -webkit-animation-name: fade-in; /* Safari, Chrome and Opera > 12.1 */
             -webkit-animation-duration: 2s;
@@ -90,6 +90,11 @@
             animation-duration: 2s;
             animation-delay: 2s;
             animation-fill-mode: forwards;
+        }
+
+        .ordered-list{
+            text-align: justify;
+            text-justify: inter-word;
         }
 
         .ml2 {
@@ -168,9 +173,8 @@
                 </div>
             </div>
         </div>
-
     </header>
-    <div class="overlay overlay-bg"></div>
+<div class="overlay overlay-bg"></div>
     <div class="container">
         <div class="row height align-items-center justify-content-center">
             <div class="col-lg-10">
@@ -179,12 +183,36 @@
                     <p class="text-white">Type 1 diabetes is a lifelong medical condition whereby the body ceases to produce insulin, a hormone that regulates blood glucose levels. People with diabetes need to pay constant attention to diet, in particular carbohydrate intake, as during digestion carbohydrates break down into glucose. <br/> <br/>
                     For people with diabetes glucose levels are regulated by manual insulin injections throughout the day. However this presents challenges, as judging the right amount of insulin to inject depends on the type and quantity of carbohydrates consumed, as well as many other variable factors such as time since last injection and age.<br/> <br/>
                     Moreover, judging the mass of carbohydrates consumed is challenging. Experienced adults typically estimate with a margin of error of approximately 20%. This is worse among children and adolescents. <br/> <br/>
-                        The creation of a system to help keep track of carbohydrate values more accurately and in a fast, accessible fashion could lead to improved quality of life for people with diabetes by helping to maintain their blood glucose levels within safe ranges.</p>
+                        The creation of a system to help keep track of carbohydrate values more accurately and in a fast, accessible fashion could lead to improved quality of life for people with diabetes by helping to maintain their blood glucose levels within safe ranges. <br/>
+                    </p>
+                    <div class="section-top-border">
+                        <h2 class="text-white mb-30">Solution</h2>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="img/menu.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-md-9 mt-sm-20">
+                                <p> To address some of the challenges people with type 1 diabetes face a multi-functional Android smartphone application was developed. The application offers three methods for accessing nutrition information of food.</p>
+                                <div class="">
+                                    <ol class="ordered-list">
+                                        <li style="color: #F1B136"><span style="color: white">Barcode Scanning – A barcode scan of food packaging enables users to find and log the relevant nutritional information of food they have consumed if it can be found online or has previously been scanned with the Nutrition Table Scanner.
+                                        </span></li>
+                                        <li style="color: #13B0A5"><span style="color: white">Nutrition Table Scanner – Should an online search not find results, Optical Character Recognition (OCR) technology using Google Mobile Vision provides functionality to quickly scan and log nutrition information directly from the packaging’s nutrition table.
+                                        </span></li>
+                                        <li style="color: #EF6363"><span style="color: white">Volume Estimation – This mode uses a reference object and two images of a known food from above and side-on to provide a rough estimation of the volume and from that carbohydrate content.
+                                        </span></li>
+                                    </ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                    <div class="section-top-border">
+
+                        <div/>
             </div>
         </div>
     </div>
-    <div/>
+<div/>
 
 
 <!--<footer class="section-gap" style="padding-top: 5px; padding-bottom: 25px;">-->
@@ -233,27 +261,5 @@
             })
 
 </script>
-<script>
-    // Wrap every letter in a span
-    $('.ml13').each(function(){
-        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-    });
-
-    anime.timeline({loop: true})
-        .add({
-            targets: '.ml13 .letter',
-            translateY: [100,0],
-            translateZ: 0,
-            opacity: [0,1],
-            easing: "easeOutExpo",
-            duration: 1400,
-            delay: function(el, i) {
-                return 300 + 30 * i;
-            }
-        })
-</script>
-
-
-
 </body>
 </html>
