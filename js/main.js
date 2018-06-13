@@ -38,13 +38,24 @@ $(document).ready(function(){
         nav: true,
         navText: ['<i class="fa fa-caret-left""></i>', '<i class="fa fa-caret-right""></i>']
     });
-    // $('.active-banner-slider').owlCarousel({
-    //     items:1,
-    //     loop:true,
-    //     margin: 100,
-    //     dots: true
-    // });
+    $('.active-banner-slider').owlCarousel({
+        items:1,
+        loop:true,
+        margin: 100,
+        dots: true
+    });
     // Add smooth scrolling to Menu links
+
+    $(document).ready(function(){
+        var screenWidth = $(window).width();
+        // if window width is smaller than 800 remove the autoplay attribute
+        // from the video
+        if (screenWidth < 800){
+            $('video').removeAttr('autoplay');
+        } else {
+            $('video').attr('autoplay');
+        }
+    });
 
     $(document).ready(function() {
         $('#mc_embed_signup').find('form').ajaxChimp();
