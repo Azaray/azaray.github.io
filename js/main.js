@@ -52,6 +52,7 @@ $(document).ready(function(){
         // from the video
         if (screenWidth < 800){
             $('video').removeAttr('autoplay');
+
         } else {
             $('video').attr('autoplay');
         }
