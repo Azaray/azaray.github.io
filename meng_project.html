@@ -58,10 +58,13 @@
             z-index: 1000;
         }
         .content h1 {
+            text-align: center;
+            text-transform: uppercase;
             padding-top: 15%;
+            z-index: 1000;
         }
         .content p {
-            font-size: 30px;
+            letter-spacing: 3px;
             text-align: justify;
             text-justify: inter-word;
             z-index: 1000;
@@ -86,7 +89,7 @@
 
 <div class="zoom">
     <div class="background-wrap">
-        <video class="video-bg-elem" preload="auto" muted="muted" autoplay="false" loop="loop">
+        <video class="video-bg-elem" preload="auto" muted="muted" autoplay="true" loop="loop">
              <source src="Video.mp4" type="video/mp4">
         </video>
     </div>
@@ -155,6 +158,7 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/disable-mobile-video.js"></script>
 
 </body>
 </html>
