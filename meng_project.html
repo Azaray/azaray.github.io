@@ -68,6 +68,61 @@
             text-align: justify;
             text-justify: inter-word;
             z-index: 1000;
+            opacity: 0;
+
+            -webkit-animation-name: fade-in; /* Safari, Chrome and Opera > 12.1 */
+            -webkit-animation-duration: 2s;
+            -webkit-animation-delay: 2s;
+            -webkit-animation-fill-mode: forwards;
+            -moz-animation-name: fadein; /* Firefox < 16 */
+            -moz-animation-duration: 2s;
+            -moz-animation-delay: 2s;
+            -moz-animation-fill-mode: forwards;
+            -ms-animation-name: fadein; /* Internet Explorer */
+            -ms-animation-duration: 2s;
+            -ms-animation-delay: 2s;
+            -ms-animation-fill-mode: forwards;
+            -o-animation-name: fadein; /* Opera < 12.1 */
+            -o-animation-duration: 2s;
+            -o-animation-delay: 2s;
+            -o-animation-fill-mode: forwards;
+            animation-name: fadein;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .ml2 {
+            font-weight: 900;
+            font-size: 3.5em;
+        }
+
+        .ml2 .letter {
+            display: inline-block;
+            line-height: 1em;
+        }
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Firefox < 16 */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari, Chrome and Opera > 12.1 */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
         }
 
     </style>
@@ -120,12 +175,11 @@
         <div class="row height align-items-center justify-content-center">
             <div class="col-lg-10">
                 <div class="banner-content text-center">
-                    <h1 class="text-white">MEng Group Project</h1>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p class="text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                    <h1 class="text-white ml2">MEng Group Project</h1>
+                    <p class="text-white">Type 1 diabetes is a lifelong medical condition whereby the body ceases to produce insulin, a hormone that regulates blood glucose levels. People with diabetes need to pay constant attention to diet, in particular carbohydrate intake, as during digestion carbohydrates break down into glucose. <br/> <br/>
+                    For people with diabetes glucose levels are regulated by manual insulin injections throughout the day. However this presents challenges, as judging the right amount of insulin to inject depends on the type and quantity of carbohydrates consumed, as well as many other variable factors such as time since last injection and age.<br/> <br/>
+                    Moreover, judging the mass of carbohydrates consumed is challenging. Experienced adults typically estimate with a margin of error of approximately 20%. This is worse among children and adolescents. <br/> <br/>
+                        The creation of a system to help keep track of carbohydrate values more accurately and in a fast, accessible fashion could lead to improved quality of life for people with diabetes by helping to maintain their blood glucose levels within safe ranges.</p>
                 </div>
             </div>
         </div>
@@ -158,6 +212,48 @@
 <script src="js/jquery.nice-select.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+    // Wrap every letter in a span
+        $('.ml2').each(function () {
+            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+        });
+
+        anime.timeline({loop: false})
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: function (el, i) {
+                    return 70 * i;
+                }
+            })
+
+</script>
+<script>
+    // Wrap every letter in a span
+    $('.ml13').each(function(){
+        $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+
+    anime.timeline({loop: true})
+        .add({
+            targets: '.ml13 .letter',
+            translateY: [100,0],
+            translateZ: 0,
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: function(el, i) {
+                return 300 + 30 * i;
+            }
+        })
+</script>
+
+
 
 </body>
 </html>
