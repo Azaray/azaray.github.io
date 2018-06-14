@@ -164,199 +164,314 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<!-- Start Header Area -->
+<div>
+    <!-- Start Header Area -->
 
-<!-- End Header Area -->
+    <!-- End Header Area -->
 
-<div class="zoom">
-    <div class="background-wrap">
-        <video class="video-bg-elem" preload="auto" muted="muted" autoplay loop="loop">
-            <source src="Video.mp4" type="video/mp4">
-        </video>
+    <div class="zoom">
+        <div class="background-wrap">
+            <video class="video-bg-elem" preload="auto" muted="muted" autoplay loop="loop">
+                <source src="Video.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-</div>
 
-<div class="content">
-    <header class="default-header">
-        <div class="header-wrap fixed-top"
-             style="padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;">
-            <div class="header-top d-flex justify-content-between align-items-center">
-                <div class="logo">
-                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+    <div class="content">
+        <header class="default-header">
+            <div class="header-wrap fixed-top"
+                 style="padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;">
+                <div class="header-top d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="main-menubar d-flex align-items-center">
+                        <nav class="hide">
+                            <a href="index.html">Home</a>
+                            <a href="index.html">About</a>
+                            <a href="index.html">Projects</a>
+                        </nav>
+                        <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+                    </div>
                 </div>
-                <div class="main-menubar d-flex align-items-center">
-                    <nav class="hide">
-                        <a href="index.html">Home</a>
-                        <a href="index.html">About</a>
-                        <a href="index.html">Projects</a>
-                    </nav>
-                    <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+            </div>
+        </header>
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row height align-items-center justify-content-center">
+                <div class="col-lg-10">
+                    <div class="banner-content text-center">
+                        <h1 class="text-white ml2">MEng Group Project</h1>
+                        <p class="text-white">Type 1 diabetes is a lifelong medical condition whereby the body ceases to
+                            produce insulin, a hormone that regulates blood glucose levels. People with diabetes need to
+                            pay
+                            constant attention to diet, in particular carbohydrate intake, as during digestion
+                            carbohydrates
+                            break down into glucose. <br/> <br/>
+                            For people with diabetes glucose levels are regulated by manual insulin injections
+                            throughout
+                            the day. However this presents challenges, as judging the right amount of insulin to inject
+                            depends on the type and quantity of carbohydrates consumed, as well as many other variable
+                            factors such as time since last injection and age.<br/> <br/>
+                            Moreover, judging the mass of carbohydrates consumed is challenging. Experienced adults
+                            typically estimate with a margin of error of approximately 20%. This is worse among children
+                            and
+                            adolescents. <br/> <br/>
+                            The creation of a system to help keep track of carbohydrate values more accurately and in a
+                            fast, accessible fashion could lead to improved quality of life for people with diabetes by
+                            helping to maintain their blood glucose levels within safe ranges. <br/>
+                        </p>
+                        <div class="section-top-border">
+                            <h2 class="text-white mb-30">Solution</h2>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="img/menu.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-9 mt-sm-20">
+                                    <p> To address some of the challenges people with type 1 diabetes face a
+                                        multi-functional Android smartphone application was developed. The application
+                                        offers three methods for accessing nutrition information of food.</p>
+                                    <div class="">
+                                        <ol class="ordered-list">
+                                            <li style="color: #F1B136"><span style="color: white">Barcode Scanning – A barcode scan of food packaging enables users to find and log the relevant nutritional information of food they have consumed if it can be found online or has previously been scanned with the Nutrition Table Scanner.
+                                        </span></li>
+                                            <li style="color: #13B0A5"><span style="color: white">Nutrition Table Scanner – Should an online search not find results, Optical Character Recognition (OCR) technology using Google Mobile Vision provides functionality to quickly scan and log nutrition information directly from the packaging’s nutrition table.
+                                        </span></li>
+                                            <li style="color: #EF6363"><span style="color: white">Volume Estimation – This mode uses a reference object and two images of a known food from above and side-on to provide a rough estimation of the volume and from that carbohydrate content.
+                                        </span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-top-border">
+                            <h2 class="text-white mb-30">Barcode Scanner</h2>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="img/openfoodfacts.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-md-9 mt-sm-20">
+                                    <p> Barcodes are scanned using a simple camera interface. Nutrition information is
+                                        gathered from:</p>
+                                    <div class="">
+                                        <ol class="unordered-list">
+                                            <li style="text-align: left; color: white"><span>The local database generated by nutrition table scans</span>
+                                            </li>
+                                            <li style="text-align: left; color: white"><span>The <a
+                                                    href="https://uk.openfoodfacts.org/">Open Food Facts </a>online database</span>
+                                            </li>
+                                            </span></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>If the product cannot be found in either database the user is prompted to use the nutrition
+                            table
+                            scanner.</p>
+                        <div/>
+                        <div class="section-top-border">
+                            <h2 class="text-white mb-30">Nutrition Table Scanner</h2>
+                            <div class="row text-right">
+                                <div class="col-md-9">
+                                    <p> The Nutrition Table Scanner uses <a
+                                            href="https://en.wikipedia.org/wiki/Optical_character_recognition">Optical
+                                        Character
+                                        Recognition </a> (OCR) and a column matching algorithm to determine the
+                                        nutrition
+                                        content of food by reading the packaging.
+                                        <br/> <br/>
+                                        Users benefit from being able to quickly log any consumed food as well as
+                                        automatically
+                                        calculate nutrition values for the amount of food that they have eaten if it is
+                                        a
+                                        fraction of a serving.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="img/dataflow.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-top-border">
+                            <h2 class="text-white mb-30">How Table Scanning Works</h2>
+                            <p> The current camera frame is processed through Google’s Mobile Vision OCR, which detects
+                                words and provides their bounding boxes.
+                                <br/> <br/>
+                                Bounding box coordinates are used to group words, first based on rows and then sorted by
+                                order in their corresponding lines. This creates strings for each line. These lines are
+                                then
+                                passed through a dictionary based error correction for the 1st column (name of food
+                                product)
+                                using the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein
+                                    Distance</a> algorithm.
+                            </p>
+                            <div class="col-lg-9" style="margin: 0 auto; padding-bottom: 60px">
+                                <img src="img/tablescanning.png" alt="" class="img-fluid">
+                            </div>
+                            <p> To correct for numeric errors, the above process is performed on five image frames. The
+                                rows
+                                are then matched based on the error corrected first column. The other words are error
+                                corrected based on the most common characters in each individual word in the line. The
+                                100g
+                                column is located based on the "per 100g" indicator if present.</p>
+                        </div>
+                        <div class="section-top-border">
+                            <h2 class="text-white mb-30">Volume Estimation: Image Capture</h2>
+                            <p>This part of the application presents a camera interface to capture two images (top-down
+                                and
+                                side-on) of food on a plate. A resizable square overlay allows a region of the image
+                                stream
+                                (one containing the food) to be used in segmentation and processed in volume estimation.
+                                To
+                                enforce that a reference object is in view in each captured image, the reference object
+                                is
+                                detected in real-time.
+                            </p>
+                            <div class="row gallery-item" style="padding-bottom: 60px;">
+                                <div class="col-xl-6">
+                                    <a href="img/verticalspaghetti.png" class="img-pop-up">
+                                        <div class="single-gallery-image"
+                                             style="background: url(img/verticalspaghetti.png);"></div>
+                                    </a>
+                                </div>
+                                <div class="col-xl-6">
+                                    <a href="img/horizontalspaghetti.png" class="img-pop-up">
+                                        <div class="single-gallery-image"
+                                             style="background: url(img/horizontalspaghetti.png);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <p>Introducing a reference object of known dimensions allows for the calculation of a pixels
+                                to
+                                real-world metric (cm) ratio. The <a
+                                        href="https://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/hough_circle/hough_circle.html">HoughCircles </a>
+                                function in OpenCV - which uses Hough circle
+                                transform to find circular objects in an image - is executed for each camera frame, to
+                                detect the British two pound coin.
+                            </p>
+                        </div>
+                        <div class="section-top-border">
+                            <h2 class="text-white mb-30">Volume Estimation: Image Segmentation</h2>
+                            <p>Captured images are segmented using OpenCV’s <a
+                                    href="https://docs.opencv.org/trunk/d8/d83/tutorial_py_grabcut.html">GrabCut </a>
+                                function. This function uses a
+                                probabilistic colour model and iterated graph cuts to differentiate and extract
+                                foreground
+                                pixels (food) of an image from the background (plate, table, wall etc).
+
+                            </p>
+                            <div class="row gallery-item" style="padding-bottom: 60px;">
+                                <div class="col-sm-3">
+                                    <a href="img/verticalpasta.png" class="img-pop-up">
+                                        <div class="single-gallery-image"
+                                             style="background: url(img/verticalpasta.png);"></div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-9">
+                                    <a href="img/horizontalpasta.png" class="img-pop-up">
+                                        <div class="single-gallery-image"
+                                             style="background: url(img/horizontalpasta.png);"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-top-border">
+                            <h2 class="text-white mb-30">Approximating Volume</h2>
+                            <p>After segmentation for both top-down and horizontal images, a mask is applied on the
+                                predicted foreground and background, painting them white and black respectively. Next,
+                                the
+                                image with the smaller width is scaled up to the size of the bigger one so that they
+                                have
+                                the same size in one dimension.
+                                <br/> <br/>
+                                Taking slices of 1-pixel width from both images, the volume of each slice can be
+                                calculated
+                                by multiplying together the total of white pixels in each one of the three dimensions.
+                                The
+                                result is a 3D model of pixels<sup style="color: white">3</sup>. In order to get the
+                                volume
+                                in cm<sup style="color: white">3</sup>, the pixel to cm ratio
+                                taken from the reference object is applied.
+                            </p>
+                            <div class="col-lg-4" style="margin: 0 auto; padding-bottom: 60px">
+                                <img src="img/mask.png" alt="" class="img-fluid">
+                            </div>
+                            <h2 class="text-white"> $$ \sum_{Pixel=1}^{Image Width} 1 * Slice Breadth * Slice
+                                Height$$</h2>
+                            <p>Using the approximated volume and a given density for a food, an estimation of the
+                                nutritional content for the food can be calculated and displayed to the user.
+                            </p>
+                        </div>
+                        <div class="section-top-border">
+                            <h2 class="text-white mb-30">Project Demo</h2>
+                            <p> The background for this webpage is a short snippet of a video demonstration of how the
+                                mobile application works. To see the full demo, watch the link below.</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_oif8Y_QqO0"
+                                    frameborder="0"
+                                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </iframe>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <div class="overlay overlay-bg"></div>
-    <div class="container">
-        <div class="row height align-items-center justify-content-center">
-            <div class="col-lg-10">
-                <div class="banner-content text-center">
-                    <h1 class="text-white ml2">MEng Group Project</h1>
-                    <p class="text-white">Type 1 diabetes is a lifelong medical condition whereby the body ceases to
-                        produce insulin, a hormone that regulates blood glucose levels. People with diabetes need to pay
-                        constant attention to diet, in particular carbohydrate intake, as during digestion carbohydrates
-                        break down into glucose. <br/> <br/>
-                        For people with diabetes glucose levels are regulated by manual insulin injections throughout
-                        the day. However this presents challenges, as judging the right amount of insulin to inject
-                        depends on the type and quantity of carbohydrates consumed, as well as many other variable
-                        factors such as time since last injection and age.<br/> <br/>
-                        Moreover, judging the mass of carbohydrates consumed is challenging. Experienced adults
-                        typically estimate with a margin of error of approximately 20%. This is worse among children and
-                        adolescents. <br/> <br/>
-                        The creation of a system to help keep track of carbohydrate values more accurately and in a
-                        fast, accessible fashion could lead to improved quality of life for people with diabetes by
-                        helping to maintain their blood glucose levels within safe ranges. <br/>
-                    </p>
-                    <div class="section-top-border">
-                        <h2 class="text-white mb-30">Solution</h2>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img src="img/menu.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md-9 mt-sm-20">
-                                <p> To address some of the challenges people with type 1 diabetes face a
-                                    multi-functional Android smartphone application was developed. The application
-                                    offers three methods for accessing nutrition information of food.</p>
-                                <div class="">
-                                    <ol class="ordered-list">
-                                        <li style="color: #F1B136"><span style="color: white">Barcode Scanning – A barcode scan of food packaging enables users to find and log the relevant nutritional information of food they have consumed if it can be found online or has previously been scanned with the Nutrition Table Scanner.
-                                        </span></li>
-                                        <li style="color: #13B0A5"><span style="color: white">Nutrition Table Scanner – Should an online search not find results, Optical Character Recognition (OCR) technology using Google Mobile Vision provides functionality to quickly scan and log nutrition information directly from the packaging’s nutrition table.
-                                        </span></li>
-                                        <li style="color: #EF6363"><span style="color: white">Volume Estimation – This mode uses a reference object and two images of a known food from above and side-on to provide a rough estimation of the volume and from that carbohydrate content.
-                                        </span></li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-top-border">
-                        <h2 class="text-white mb-30">Barcode Scanner</h2>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <img src="img/openfoodfacts.png" alt="" class="img-fluid">
-                            </div>
-                            <div class="col-md-9 mt-sm-20">
-                                <p> Barcodes are scanned using a simple camera interface. Nutrition information is
-                                    gathered from:</p>
-                                <div class="">
-                                    <ol class="unordered-list">
-                                        <li style="text-align: left; color: white"><span>The local database generated by nutrition table scans</span>
-                                        </li>
-                                        <li style="text-align: left; color: white"><span>The <a
-                                                href="https://uk.openfoodfacts.org/">Open Food Facts </a>online database</span>
-                                        </li>
-                                        </span></li>
-                                    </ol>
-                                </div>
 
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <p>If the product cannot be found in either database the user is prompted to use the nutrition table
-                        scanner.</p>
-                    <div/>
-                    <div class="section-top-border">
-                        <h2 class="text-white mb-30">Nutrition Table Scanner</h2>
-                        <div class="row text-right">
-                            <div class="col-md-9">
-                                <p> The Nutrition Table Scanner uses <a
-                                        href="https://en.wikipedia.org/wiki/Optical_character_recognition">Optical
-                                    Character
-                                    Recognition </a> (OCR) and a column matching algorithm to determine the nutrition
-                                    content of food by reading the packaging.
-                                    <br/> <br/>
-                                    Users benefit from being able to quickly log any consumed food as well as
-                                    automatically
-                                    calculate nutrition values for the amount of food that they have eaten if it is a
-                                    fraction of a serving.</p>
-                            </div>
-                            <div class="col-md-3">
-                                <img src="img/dataflow.png" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-top-border">
-                        <h2 class="text-white mb-30">How Table Scanning Works</h2>
-                        <p> The current camera frame is processed through Google’s Mobile Vision OCR, which detects
-                            words and provides their bounding boxes.
-                            <br/> <br/>
-                            Bounding box coordinates are used to group words, first based on rows and then sorted by
-                            order in their corresponding lines. This creates strings for each line. These lines are then
-                            passed through a dictionary based error correction for the 1st column (name of food product)
-                            using the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein
-                                Distance</a> algorithm.
-                        </p>
-                        <div class="col-lg-9" style="margin: 0 auto; padding-bottom: 60px">
-                            <img src="img/tablescanning.png" alt="" class="img-fluid">
-                        </div>
-                        <p> To correct for numeric errors, the above process is performed on five image frames. The rows
-                            are then matched based on the error corrected first column. The other words are error
-                            corrected based on the most common characters in each individual word in the line. The 100g
-                            column is located based on the "per 100g" indicator if present.</p>
-                    </div>
-                    <!--<footer class="section-gap" style="padding-top: 5px; padding-bottom: 25px;">-->
-                    <!--<div class="container">-->
-                    <!--<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">-->
-                    <!--<p class="footer-text m-0">Copyright &copy; 2017 All rights reserved   |   This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></p>-->
-                    <!--<div class="footer-social d-flex align-items-center">-->
-                    <!--<a href="https://www.facebook.com/leonardo.roelofse" target="_blank"><i class="fa fa-facebook"></i></a>-->
-                    <!--<a href="https://www.linkedin.com/in/leonardo-roelofse-1b68b1ab/" target="_blank"><i class="fa fa-linkedin"></i></a>-->
-                    <!--<a href="https://github.com/Azaray" target="_blank"><i class="fa fa-github"></i></a>-->
-                    <!--<a href="https://bitbucket.org/Leonardo_Roelofse/" target="_blank"><i class="fa fa-bitbucket"></i></a>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                    <!--</footer>-->
+    </div>
+    <footer class="section-gap" style="padding-top: 5px; padding-bottom: 25px;">
+        <div class="container">
+            <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+                <p class="footer-text m-0" style="letter-spacing: 0px;">Copyright &copy; 2017 All rights reserved | This template is made with <i
+                        class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></p>
+                <div class="footer-social d-flex align-items-center">
+                    <a href="https://www.facebook.com/leonardo.roelofse" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/leonardo-roelofse-1b68b1ab/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/Azaray" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://bitbucket.org/Leonardo_Roelofse/" target="_blank"><i
+                            class="fa fa-bitbucket"></i></a>
                 </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- End Footer Area -->
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
-                <!-- End Footer Area -->
-                <script src="js/vendor/jquery-2.2.4.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
-                        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-                        crossorigin="anonymous"></script>
-                <script src="js/vendor/bootstrap.min.js"></script>
-                <script src="js/jquery.ajaxchimp.min.js"></script>
-                <script src="js/owl.carousel.min.js"></script>
-                <script src="js/jquery.nice-select.min.js"></script>
-                <script src="js/jquery.magnific-popup.min.js"></script>
-                <script src="js/main.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-                <script>
-                    // Wrap every letter in a span
-                    var screenWidth = $(window).width();
-                    // if window width is smaller than 800 remove the autoplay attribute
-                    // from the video
-                    if (screenWidth > 800) {
-                        $('.ml2').each(function () {
-                            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-                        });
+<script>
+    // Wrap every letter in a span
+    var screenWidth = $(window).width();
+    // if window width is smaller than 800 remove the autoplay attribute
+    // from the video
+    if (screenWidth > 800) {
+        $('.ml2').each(function () {
+            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+        });
 
-                        anime.timeline({loop: false})
-                            .add({
-                                targets: '.ml2 .letter',
-                                scale: [4, 1],
-                                opacity: [0, 1],
-                                translateZ: 0,
-                                easing: "easeOutExpo",
-                                duration: 950,
-                                delay: function (el, i) {
-                                    return 70 * i;
-                                }
-                            })
-                    }
-                </script>
+        anime.timeline({loop: false})
+            .add({
+                targets: '.ml2 .letter',
+                scale: [4, 1],
+                opacity: [0, 1],
+                translateZ: 0,
+                easing: "easeOutExpo",
+                duration: 950,
+                delay: function (el, i) {
+                    return 70 * i;
+                }
+            })
+    }
+</script>
 </body>
 </html>
